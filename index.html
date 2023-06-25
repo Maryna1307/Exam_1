@@ -12,11 +12,11 @@
 </head>
 <body>
     <header class="header">
-        <div class="container d-flex">
-            <div class="logo">
-                <img src="./assets/img/logo.svg" alt="Logo" class="logo__img">
-            </div>
-            <nav class="nav">
+        <div class="header__wrapper">  
+            <nav class="nav container">
+                <div class="logo">
+                    <img src="./assets/svg/logo.svg" alt="Logo" class="logo__img">
+                </div>
                 <ul class="menu">
                     <li class="nenu__item">
                         <a href="#" class="menu__link">Home</a>
@@ -39,17 +39,15 @@
                 </ul>
             </nav>
         </div>
+        <div class="header__descr container">
+            <h1 class="title title_1">A peer-to-peer stablecoin <span>clearinghouse</span> for the new economy</h1>
+            <p class="text">We are bringing real solutions to the payments world by leveraging public blockchains.</p>
+            <a href="#" class="link-btn">Join now</a>
+        </div>
     </header>
     <main class="main">
-        <section class="first-screen">
-            <div class="container">
-                <h1 class="title title_1">A peer-to-peer stablecoin <span>clearinghouse</span> for the new economy</h1>
-                <p class="text">We are bringing real solutions to the payments world by leveraging public blockchains.</p>
-                <a href="#" class="link-btn">Join now</a>
-            </div>
-        </section>
-        <!-- <section class="section statistic">
-            <div class="container">
+        <div class="container">
+            <section class="statistic">
                 <div class="statistic__image">
                     <img src="./assets/img/statistic-image.png" alt="statistic-image" class="statistic__img">
                 </div>
@@ -77,12 +75,11 @@
                         <p class="text">
                             The API-enabled, centralized platform addresses the key issues of inconsistent liquidity, stability and accessibility which are currently preventing the stablecoin market from reaching critical mass.
                         </p>
+                        <a href="#" class="link-btn">Contact sales</a>
                     </div>
                 </div>
-            </div>
-        </section> -->
-        <section class="section advantages">
-            <div class="container d-grid">
+            </section>
+            <section class="section advantages">
                 <div class="advantage">
                     <h3 class="title title_3">Qualified <span>traders</span> and liquidty <span>solutions</span></h3>
                     <p class="text">Trade easily and efficiently between 12 stablecoins, including USDT, TrueUSD, Dai, Eurs and Gemini Dollar.</p>
@@ -99,25 +96,19 @@
                     <h3 class="title title_3"><span>Treasury</span> and <span>returns</span> for stablecoin stores</h3>
                     <p class="text">Automate your stablecoin store with instant payments and on-the-fly conversion between different stablecoins.</p>
                 </div>
-            </div>
-        </section>
-        <section class="section quote">
-            <div class="container quote__container">
+            </section>
+             <section class="section quote">
                 <p class="quote__text">Solis Group serves as a liquidity nexus that gives stablecoin issuers, holders and exchanges certainty over access and liquidity</p>
                 <p class="quote__author">Lennon Burnett, Solis Group CEO</p>
-            </div>
-        </section>
-        <section class="section video">
-            <div class="container video__container">
+            </section>
+            <section class="section video">
                 <div class="video__wrapper">
-                    <iframe width="870" height="539" src="https://www.youtube.com/embed/vnbN9V_2Guk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="video__youtube"></iframe>
+                    <iframe src="https://www.youtube.com/embed/vnbN9V_2Guk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="video__youtube"></iframe>
                 </div>
                 <h3 class="title title_3">A <span>powerful API</span>, easy to use user interface</h3>
                 <p class="text">Our API allows all members to interact with Stablehouse’s platform, from effecting transfers to deposits, withdrawals, creation and redemption and reporting.</p>
-            </div>
             </section>
-        <section class="section features">
-            <div class="container features__container">
+            <section class="section features">
                 <div class="feature__image">
                     <img src="./assets/img/features-background-image.png" alt="feature-image" class="feature__img">
                 </div>
@@ -140,11 +131,8 @@
                         <a href="#" class="link-btn feature__link">Join now</a>
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <section class="section reviews">
-            <div class="container">
+            </section>
+            <section class="section reviews">
                 <h3 class="title title_3">Client <span>reviews</span></h3>
                 <p class="text reviews__text">Happy clients, happy us. Read our client reviews about the work process and results.</p>
                 <div class="reviews__flex">
@@ -161,31 +149,20 @@
                         <h5 class="title review__title">Elvis Mooney</h5>
                     </article>
                 </div>
-            </div>
-        </section>
-        <section class="section contacts">
-            <div class="container contacts__container">
+            </section>
+            <section class="section contacts">
                 <div class="contacts__descr">
                     <h3 class="title title_3">Contact <span>our sales team</span></h3>
                     <p class="text">Our team is happy to answer your sales questions. Fill out the form and we’ll be in touch as soon as possible.</p>
                 </div>
-                <form class="contacts__form form">
-                    <div class="form__wrapper">
-                        <!-- <label for="name" class="form__label">Your name</label> -->
-                        <input type="text" class="form__input" id="name" placeholder="Your name">
-                    </div>
-                    <div class="form__wrapper">
-                        <!-- <label for="email" class="form__label">Email</label> -->
-                        <input type="email" class="form__input" id="email" placeholder="Email">
-                    </div>
-                    <div class="form__wrapper">
-                        <!-- <label for="more" class="form__label">Tell more</label> -->
-                        <input type="text" class="form__input" id="more" placeholder="Tell more">
-                    </div>
+                <form class="form">
+                    <input type="text" class="form__input" id="name" placeholder="Your name">
+                    <input type="email" class="form__input" id="email" placeholder="Email">
+                    <input type="text" class="form__input" id="more" placeholder="Tell more">
                     <button type="submit" class="link-btn">Send request</button>
                 </form>
-            </div>
-        </section>
+            </section>
+        </div>
     </main>
     <footer class="footer container">
         <p class="footer__text">
