@@ -499,7 +499,7 @@ img {
 }
 .video__wrapper {
   width: 100%;
-  height: 62vh;
+  height: 100%;
   margin-bottom: 50px;
   padding: 31px 70px 31px 30px;
   border: 1px solid #E4E4E4;
@@ -530,10 +530,12 @@ img {
   transform: translateY(-50%);
   right: 14px;
 }
+.video__wrapper .youtube__wrapper {
+  aspect-ratio: 16/9;
+}
 .video__youtube {
   width: 100%;
   height: 100%;
-  object-fit: cover;
   opacity: 0.2;
   border-radius: 8px;
 }
@@ -860,9 +862,6 @@ img {
   .features__image {
     display: none;
   }
-  .video__wrapper {
-    height: 50vh;
-  }
   .features__wrapper {
     background-image: url(../assets/img/features-background-image.png);
     background-repeat: no-repeat;
@@ -953,7 +952,6 @@ img {
   }
   .video__wrapper {
     padding: 10px 23px 10px 10px;
-    height: 27vh;
   }
   .video__wrapper::before {
     width: 4.5px;
