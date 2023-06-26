@@ -1,0 +1,119 @@
+@import 'vars';
+
+body {
+    background: $background_dark;
+    color: $color_dark;
+}
+
+.title > span {
+    color: #689FF2;
+}
+
+.header {
+    background-image: url(../assets/img/first-screen-bg_black.png);
+
+    &__wrapper {
+        background: linear-gradient(269deg, rgba(22, 25, 38, 0.50) 0%, rgba(22, 25, 38, 0.00) 51.07%, rgba(22, 25, 38, 0.00) 100%), rgba(22, 25, 38, 0.02);
+        backdrop-filter: blur(4.5px);
+    }
+
+    .menu__link {
+        color: $color_dark;
+
+        &:hover::after {
+            background: linear-gradient(100deg, #53F3CD 0%, rgba(83, 243, 205, 0.00) 100%);
+            opacity: 1;
+        }
+    }
+}
+
+.link-btn {
+    color: #53F3CD;
+
+    &::after {
+        background: #53F3CD;
+    }
+
+    &:hover {
+        color: #02E0AB;
+
+        &.link-btn::after {
+            background-color: #02E0AB;
+        }
+    }
+}
+
+.title_2 span {
+    color: #FFFFFF;
+}
+
+.statistic__info {
+    background: $background_dark;
+}
+
+.advantages .advantage {
+    border-color: $border_color_dark;
+}
+
+.quote__text::before {
+    content: url(../assets/svg/quote-icon_green.svg);
+}
+
+.video__wrapper {
+    border-color: $border_color_dark;
+
+    &::before {
+        border-color: $border_color_dark;
+    }
+
+    &::after {
+        border-color: $border_color_dark;
+    }
+}
+
+.features__wrapper {
+    background: $background_dark;
+}
+
+.link__wrapper {
+    border-color: $border_color_dark;
+
+    &:hover {
+        border-color: #02E0AB;
+    }
+}
+
+.contacts {
+    border-color: $border_color_dark;
+}
+
+.form__input {
+    background: none;
+    border-color: #FFFFFF;
+}
+
+.footer {
+    border-color: $border_color_dark;
+
+    .list__link {
+        color: $color_dark;
+    }
+}
+
+.header .nav .burger-img {
+    background: #FFFFFF;
+    &::before,
+    &::after {
+        background: #FFFFFF;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .header {
+        background-image: url(../assets/img/first-screen-bg-mobile_black.png);
+    }
+
+    .statistic__descr {
+        background-image: url(../assets/img/statistic-img-mobile_black.png);
+    }
+}
