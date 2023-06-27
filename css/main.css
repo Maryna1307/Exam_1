@@ -233,6 +233,14 @@ input[type=checkbox], input[type=radio] {
   padding: 0;
 }
 
+@keyframes apparition {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -274,6 +282,7 @@ img {
 .title_1 {
   max-width: 523px;
   font-size: 44px;
+  animation: apparition 6s 1;
 }
 .title_2 {
   margin-bottom: 12px;
@@ -421,6 +430,7 @@ img {
   max-width: 770px;
   background: #FFFFFF;
   opacity: 0.9;
+  animation: apparition 6s 1;
 }
 .statistic__list {
   list-style: none;
@@ -602,6 +612,18 @@ img {
 }
 .reviews__item_3 {
   background-image: url(../assets/img/reviews_image3.png);
+}
+.reviews .reviews__flex .review {
+  opacity: 0.6;
+}
+.reviews .reviews__flex .review:hover {
+  opacity: 1;
+  transform: perspective(800px);
+}
+.reviews .review {
+  transform-origin: center;
+  transform: perspective(500px) rotateY(30deg);
+  transition: 0.6s;
 }
 .reviews .review {
   display: flex;
